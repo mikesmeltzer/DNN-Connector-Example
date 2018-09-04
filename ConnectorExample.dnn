@@ -1,0 +1,39 @@
+<dotnetnuke type="Package" version="5.0">
+    <packages>
+        <package name="MikeSmeltzer.Connectors.ConnectorExample" type="Connector" version="01.00.02" isSystem="false">
+            <friendlyName>Connector Extension Example</friendlyName>
+            <description>The Connector Extension Example enables you to see how the Connector API works using Google Analytics as an example use case.</description>
+            <iconFile>~/DesktopModules/MikeSmeltzer/ConnectorExample/Images/icon-32px.png</iconFile>
+          <dependencies>
+            <dependency type="CoreVersion">09.02.00</dependency>
+          </dependencies>
+            <owner>
+                <name>Mike Smeltzer</name>
+                <organization>Mike Smeltzer Consulting</organization>
+                <url>https://www.mikesmeltzer.com</url>
+                <email>mike@mikesmeltzer.com</email>
+            </owner>
+            <license src="license.txt" />
+            <releaseNotes src="releaseNotes.txt" />
+            <azureCompatible>true</azureCompatible>
+            <components>
+                <component type="Assembly">
+                    <assemblies>
+                        <assembly>
+                            <path>bin</path>
+                            <name>MikeSmeltzer.Connectors.ConnectorExample.dll</name>
+                        </assembly>
+                    </assemblies>
+                </component>
+                <component type="ResourceFile">
+                    <resourceFiles>
+                        <basePath>DesktopModules\MikeSmeltzer\ConnectorExample</basePath>
+                        <resourceFile>
+                            <name>Resources.zip</name>
+                        </resourceFile>
+                    </resourceFiles>
+                </component>
+            </components>
+        </package>
+    </packages>
+</dotnetnuke>
